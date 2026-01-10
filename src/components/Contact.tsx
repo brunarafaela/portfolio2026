@@ -27,14 +27,14 @@ const Contact = () => {
           </motion.div>
 
           <motion.a
-            href="mailto:joao@email.com"
+            href="mailto:contato@brunalima.online"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border-2 border-primary text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 glow"
           >
             <Mail className="w-5 h-5" />
-            Enviar Email
+            Me mande uma mensagem
           </motion.a>
         </div>
       </div>

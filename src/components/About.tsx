@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import profilePhoto from "@/assets/profile-photo.jpg";
+import profilePhoto from "@/assets/profile-photo.webp";
 
 const About = () => {
   const ref = useRef(null);
@@ -31,14 +31,15 @@ const About = () => {
               className="md:col-span-3 space-y-4 text-muted-foreground"
             >
               <p>
-                Olá! Sou um desenvolvedor apaixonado por criar experiências digitais 
+                Olá! Sou a <span className="text-foreground">Bruna Lima</span>, 
+                Engenheira de Software apaixonada por criar experiências digitais 
                 que combinam <span className="text-foreground">design elegante</span> com{" "}
                 <span className="text-foreground">código limpo</span>.
               </p>
               <p>
-                Minha jornada na programação começou há alguns anos, quando decidi 
-                transformar curiosidade em profissão. Desde então, tenho trabalhado 
-                com startups e empresas para entregar soluções que fazem diferença.
+                Com foco em desenvolvimento web, trabalho criando soluções modernas 
+                e funcionais para a web, sempre buscando entregar produtos de qualidade 
+                que fazem diferença na vida das pessoas.
               </p>
               <p>
                 Atualmente, meu foco está em construir produtos acessíveis e 
