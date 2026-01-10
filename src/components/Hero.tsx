@@ -42,7 +42,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-5xl md:text-7xl font-bold mb-4"
           >
-            João Silva
+            Bruna Lima 👋
           </motion.h1>
           
           <motion.h2
@@ -51,8 +51,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-3xl md:text-5xl font-bold text-muted-foreground mb-6"
           >
-            Desenvolvedor{" "}
-            <span className="text-gradient">Full Stack</span>
+            Engenheira de{" "}
+            <span className="text-gradient">Software</span>
           </motion.h2>
           
           <motion.p
@@ -61,8 +61,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8"
           >
-            Transformo ideias em experiências digitais incríveis. 
-            Especializado em criar aplicações web modernas, performáticas e com design impecável.
+            Focada em desenvolvimento web, criando experiências digitais modernas e funcionais.
           </motion.p>
 
           <motion.div
@@ -72,7 +71,7 @@ const Hero = () => {
             className="flex items-center justify-center gap-4 mb-12"
           >
             <a
-              href="https://github.com"
+              href="https://github.com/brunarafaela"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300"
@@ -80,7 +79,7 @@ const Hero = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/brunarafaela/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300"
@@ -88,7 +87,7 @@ const Hero = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:joao@email.com"
+              href="mailto:contato@brunalima.online"
               className="p-3 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300"
             >
               <Mail className="w-5 h-5" />
