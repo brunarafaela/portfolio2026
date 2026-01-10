@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const About = () => {
   const ref = useRef(null);
@@ -71,9 +72,11 @@ const About = () => {
               <div className="relative">
                 <div className="absolute inset-0 rounded-lg bg-primary/20 translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300" />
                 <div className="relative rounded-lg overflow-hidden border-2 border-primary/50">
-                  <div className="aspect-square bg-gradient-to-br from-muted to-card flex items-center justify-center">
-                    <span className="font-mono text-6xl text-primary">JS</span>
-                  </div>
+                  <img 
+                    src={profilePhoto} 
+                    alt="Foto de perfil" 
+                    className="aspect-square object-cover w-full"
+                  />
                 </div>
               </div>
             </motion.div>
