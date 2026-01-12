@@ -27,7 +27,7 @@ const skills = [
   {
     icon: Database,
     title: "Ferramentas",
-    description: "Figma, Adobe Photoshop, Git, GitHub, GitLab",
+    description: "Figma, Adobe Photoshop, UML, Trello, Slack, Bling, Tray",
   },
   {
     icon: BarChart3,

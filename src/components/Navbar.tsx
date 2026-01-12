@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const navLinks = [
   { name: "Sobre", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Experiência", href: "#experience" },
   { name: "Formação", href: "#education" },
+  { name: "Experiência", href: "#experience" },
+  { name: "Skills", href: "#skills" },
   { name: "Projetos", href: "#projects" },
   { name: "Contato", href: "#contact" },
 ];
@@ -19,7 +19,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="font-mono text-xl font-bold text-primary">
-          {"<Dev />"}
+          {"<bruna />"}
         </a>
         <ul className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (

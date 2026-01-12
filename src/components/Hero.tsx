@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Twitch, Instagram, Mail } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -61,7 +61,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8"
           >
-            Apaixonada por tecnologia, criando experiências digitais com foco em UX/UI, SEO e Performance.
+            Apaixonada por tecnologia e criar experiências digitais com foco em Performance e Conversão.
           </motion.p>
 
           <motion.div
@@ -85,6 +85,22 @@ const Hero = () => {
               className="p-3 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300"
             >
               <Linkedin className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.twitch.tv/rafinha_php"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300"
+            >
+              <Twitch className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.instagram.com/bruna.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300"
+            >
+              <Instagram className="w-5 h-5" />
             </a>
             <a
               href="mailto:brunarafaelav@outlook.com"

@@ -37,22 +37,22 @@ const About = () => {
               </div>
               
               <p>
-                Olá! Sou a <span className="text-foreground">Bruna Lima</span>, 
-                Desenvolvedora Web apaixonada por tecnologia. Iniciei meus estudos em{" "}
-                <span className="text-foreground">2013</span> e trabalho profissionalmente desde{" "}
+                Olá! Sou <span className="text-foreground">Bruna Lima</span>, 
+                desenvolvedora apaixonada por tecnologia. Iniciei meus estudos em{" "}
+                <span className="text-foreground">2013</span> e trabalho profissionalmente na área desde{" "}
                 <span className="text-foreground">2016</span>.
               </p>
               <p>
-                Minha especialidade é o desenvolvimento de sites com{" "}
-                <span className="text-foreground">WordPress</span>, utilizando{" "}
-                <span className="text-foreground">PHP</span>, <span className="text-foreground">MySQL</span> e{" "}
-                <span className="text-foreground">JavaScript</span>. Trabalho com foco em{" "}
-                <span className="text-foreground">UX/UI Design</span>, <span className="text-foreground">SEO</span> e{" "}
-                <span className="text-foreground">Performance</span>.
+                Minha especialidade é o desenvolvimento de aplicações web utilizando a stack{" "}
+                <span className="text-foreground">PHP</span> (MVC, Procedural), <span className="text-foreground">MySQL</span> e{" "}
+                <span className="text-foreground">JavaScript</span>. Também possuo sólida experiência no desenvolvimento em WordPress. Trabalho com foco em {" "}
+                <span className="text-foreground">Agilidade</span>, {" "}
+                <span className="text-foreground">UI/UX Design</span>, <span className="text-foreground">SEO</span>, {" "}<span className="text-foreground">Performance</span> e{" "}
+                <span className="text-foreground">Conversão</span>.
               </p>
               <p>
-                Atualmente cursando Pós-graduação em Engenharia de Software com Metodologias Ágeis, 
-                sempre buscando aprimorar minhas habilidades e entregar produtos de qualidade 
+                Sou pós-graduada em Engenharia de Software com Metodologias Ágeis, 
+                e estou sempre buscando aprimorar minhas habilidades e entregar produtos digitais de qualidade 
                 que fazem diferença na experiência dos usuários.
               </p>
 
@@ -61,7 +61,7 @@ const About = () => {
                   Tecnologias que tenho trabalhado:
                 </p>
                 <ul className="grid grid-cols-2 gap-2 font-mono text-sm">
-                  {["HTML/CSS/SCSS", "JavaScript/jQuery", "PHP/MySQL", "Vue.js", "WordPress", "Docker"].map(
+                  {["HTML/CSS/JavaScript", "PHP/MySQL", "API REST", "WordPress/WooCommerce", "Docker", "Bling/Tray"].map(
                     (tech) => (
                       <li key={tech} className="flex items-center gap-2">
                         <span className="text-primary">▹</span>

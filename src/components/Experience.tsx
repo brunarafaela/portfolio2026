@@ -9,42 +9,42 @@ const experiences = [
     role: "Analista Desenvolvedora Web Pleno",
     period: "06/2023 - 11/2024",
     description:
-      "Desenvolvimento orientado a agilidade, experiência do usuário, responsividade, desempenho e SEO. Ambiente híbrido de trabalho.",
+      "Trabalhei como analista desenvolvedora em plataformas digitais de Martech. Alocada em squads de marcas da companhia bem como atuação em plataformas internas como CMS entre outros. Marcas: Neoquimica, Mantecorp Skincare, Zero-cal, Cepacol, Nebacetin, Coristina, Tamarine, Blumel, Hypera Pharma, Mantecorp Saúde.",
   },
   {
     company: "Colmeia Performance Digital",
     role: "Desenvolvedora Web",
     period: "10/2021 - 05/2023",
     description:
-      "Alocada na Hypera Pharma. Desenvolvimento de sites WordPress com PHP, JavaScript e MySQL. Criação de temas personalizados, landing pages e otimização de performance.",
+      "Trabalhei no desenvolvimento de sites, blogs e landing pages em WordPress com foco em performance para captação de leads e conversão. Temas desenvolvidos por mim do zero, de acordo com especificação de cada cliente, utilizando ACF, post types e integraçãpo com plugins.",
   },
   {
     company: "Fuerza Studio",
     role: "Desenvolvedora Front-end",
     period: "05/2021 - 09/2021",
     description:
-      "Desenvolvimento front-end para projetos web utilizando tecnologias modernas e boas práticas de desenvolvimento.",
+      "Desenvolvimento front-end para projetos web em WordPress utilizando tecnologias modernas e boas práticas de desenvolvimento.",
   },
   {
     company: "Enube.me",
     role: "Desenvolvedora Front-end",
     period: "12/2020 - 04/2021",
     description:
-      "Atuação no desenvolvimento de interfaces web com foco em experiência do usuário e performance.",
+      "Atuação no desenvolvimento de um projeto web com foco em experiência do usuário e performance para um cliente da companhia.",
   },
   {
     company: "Autônoma",
     role: "Desenvolvedora Web",
     period: "08/2016 - 11/2020",
     description:
-      "Desenvolvimento de sites e aplicações web para diversos clientes. WordPress, PHP, JavaScript, HTML e CSS.",
+      "Desenvolvimento, manutenção e suporte técnico para clientes como Unilever, Faculdades Anclivepa, Westcon, entre outros. Minhas atribuições foram desde desenvolvimento de sites, landing pages, como manutenção em sistemas, e inclusão de conteúdos. Também desenvolvi um sistema de controle de holerites.",
   },
   {
     company: "Seconci-SP",
     role: "Estagiária",
     period: "08/2015 - 07/2016",
     description:
-      "Início da carreira profissional com suporte técnico e desenvolvimento de soluções web.",
+      "Início da carreira profissional atuando em rotinas administrativas nos setores de Informática e Recursos Humanos",
   },
 ];
 
@@ -68,7 +68,7 @@ const Experience = () => {
             </h2>
             <div className="w-24 h-1 bg-primary rounded mx-auto mb-4" />
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Minha trajetória profissional desde 2015
+              Minha trajetória profissional na área da tecnologia
             </p>
           </motion.div>
 

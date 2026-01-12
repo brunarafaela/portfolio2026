@@ -77,11 +77,11 @@ const Projects = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-2">
               <span className="font-mono text-primary text-lg">06.</span>{" "}
-              Meu Portfolio
+              Meu Portfólio
             </h2>
             <div className="w-24 h-1 bg-primary rounded mx-auto mb-4" />
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Projetos que desenvolvi ao longo da minha carreira
+              Alguns dos meus trabalhos de destaque.
             </p>
           </motion.div>
 
@@ -100,7 +100,7 @@ const Projects = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full aspect-video object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
 
