@@ -1,44 +1,38 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code2, Database, Layout, Server, Smartphone, Zap } from "lucide-react";
+import { Code2, Database, Server, Layout, Cloud, BarChart3 } from "lucide-react";
 
 const skills = [
   {
     icon: Code2,
     title: "Frontend",
-    description: "React, Vue, TypeScript, Tailwind CSS",
-    color: "from-primary/20 to-primary/5",
+    description: "HTML, CSS, SCSS/SASS, Bootstrap, JavaScript, jQuery, Handlebars.js, Vue.js",
   },
   {
     icon: Server,
     title: "Backend",
-    description: "Node.js, Python, Express, NestJS",
-    color: "from-primary/20 to-primary/5",
+    description: "POO, PHP, MySQL, MVC, API REST",
   },
   {
-    icon: Database,
-    title: "Database",
-    description: "PostgreSQL, MongoDB, Redis, Prisma",
-    color: "from-primary/20 to-primary/5",
+    icon: Cloud,
+    title: "DevOps",
+    description: "Azure DevOps, Cloud Azure, Docker, Git, CI/CD",
   },
   {
     icon: Layout,
-    title: "UI/UX",
-    description: "Figma, Design Systems, Acessibilidade",
-    color: "from-primary/20 to-primary/5",
+    title: "CMS/WordPress",
+    description: "Themes, ACF, Post Types, Elementor, WooCommerce",
   },
   {
-    icon: Smartphone,
-    title: "Mobile",
-    description: "React Native, Flutter, PWA",
-    color: "from-primary/20 to-primary/5",
+    icon: Database,
+    title: "Ferramentas",
+    description: "Figma, Adobe Photoshop, Git, GitHub, GitLab",
   },
   {
-    icon: Zap,
-    title: "DevOps",
-    description: "Docker, AWS, CI/CD, Vercel",
-    color: "from-primary/20 to-primary/5",
+    icon: BarChart3,
+    title: "Analytics/SEO",
+    description: "GTM, Google Analytics, Google Search Console",
   },
 ];
 

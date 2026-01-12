@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 const navLinks = [
   { name: "Sobre", href: "#about" },
   { name: "Skills", href: "#skills" },
+  { name: "Experiência", href: "#experience" },
+  { name: "Formação", href: "#education" },
   { name: "Projetos", href: "#projects" },
   { name: "Contato", href: "#contact" },
 ];
@@ -19,12 +21,12 @@ const Navbar = () => {
         <a href="#" className="font-mono text-xl font-bold text-primary">
           {"<Dev />"}
         </a>
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <li key={link.name}>
               <a
                 href={link.href}
-                className="font-medium text-muted-foreground hover:text-primary transition-colors duration-300"
+                className="font-medium text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
               >
                 {link.name}
               </a>

@@ -51,8 +51,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-3xl md:text-5xl font-bold text-muted-foreground mb-6"
           >
-            Engenheira de{" "}
-            <span className="text-gradient">Software</span>
+            Desenvolvedora{" "}
+            <span className="text-gradient">Web</span>
           </motion.h2>
           
           <motion.p
@@ -61,7 +61,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8"
           >
-            Focada em desenvolvimento web, criando experiências digitais modernas e funcionais.
+            Apaixonada por tecnologia, criando experiências digitais com foco em UX/UI, SEO e Performance.
           </motion.p>
 
           <motion.div
@@ -87,7 +87,7 @@ const Hero = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:contato@brunalima.online"
+              href="mailto:brunarafaelav@outlook.com"
               className="p-3 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300"
             >
               <Mail className="w-5 h-5" />
