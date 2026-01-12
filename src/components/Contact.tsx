@@ -16,18 +16,18 @@ const Contact = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <p className="font-mono text-primary mb-4">04. E agora?</p>
+            <p className="font-mono text-primary mb-4">07. E agora?</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Vamos Conversar?
             </h2>
             <p className="text-muted-foreground text-lg mb-8 max-w-md mx-auto">
-              Estou sempre aberto a novas oportunidades e projetos interessantes. 
+              Estou sempre aberta a novas oportunidades e projetos interessantes. 
               Se quiser trocar uma ideia, é só me chamar!
             </p>
           </motion.div>
 
           <motion.a
-            href="mailto:contato@brunalima.online"
+            href="mailto:brunarafaelav@outlook.com"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}

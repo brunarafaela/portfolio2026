@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { MapPin } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.webp";
 
 const About = () => {
@@ -30,29 +31,37 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="md:col-span-3 space-y-4 text-muted-foreground"
             >
+              <div className="flex items-center gap-2 text-sm text-primary mb-4">
+                <MapPin className="w-4 h-4" />
+                <span>São Paulo, SP</span>
+              </div>
+              
               <p>
                 Olá! Sou a <span className="text-foreground">Bruna Lima</span>, 
-                Engenheira de Software apaixonada por criar experiências digitais 
-                que combinam <span className="text-foreground">design elegante</span> com{" "}
-                <span className="text-foreground">código limpo</span>.
+                Desenvolvedora Web apaixonada por tecnologia. Iniciei meus estudos em{" "}
+                <span className="text-foreground">2013</span> e trabalho profissionalmente desde{" "}
+                <span className="text-foreground">2016</span>.
               </p>
               <p>
-                Com foco em desenvolvimento web, trabalho criando soluções modernas 
-                e funcionais para a web, sempre buscando entregar produtos de qualidade 
-                que fazem diferença na vida das pessoas.
+                Minha especialidade é o desenvolvimento de sites com{" "}
+                <span className="text-foreground">WordPress</span>, utilizando{" "}
+                <span className="text-foreground">PHP</span>, <span className="text-foreground">MySQL</span> e{" "}
+                <span className="text-foreground">JavaScript</span>. Trabalho com foco em{" "}
+                <span className="text-foreground">UX/UI Design</span>, <span className="text-foreground">SEO</span> e{" "}
+                <span className="text-foreground">Performance</span>.
               </p>
               <p>
-                Atualmente, meu foco está em construir produtos acessíveis e 
-                inclusivos para a web, utilizando as tecnologias mais modernas 
-                do mercado.
+                Atualmente cursando Pós-graduação em Engenharia de Software com Metodologias Ágeis, 
+                sempre buscando aprimorar minhas habilidades e entregar produtos de qualidade 
+                que fazem diferença na experiência dos usuários.
               </p>
 
               <div className="pt-4">
                 <p className="text-foreground font-medium mb-3">
-                  Tecnologias que tenho trabalhado recentemente:
+                  Tecnologias que tenho trabalhado:
                 </p>
                 <ul className="grid grid-cols-2 gap-2 font-mono text-sm">
-                  {["React", "TypeScript", "Node.js", "Next.js", "PostgreSQL", "Tailwind CSS"].map(
+                  {["HTML/CSS/SCSS", "JavaScript/jQuery", "PHP/MySQL", "Vue.js", "WordPress", "Docker"].map(
                     (tech) => (
                       <li key={tech} className="flex items-center gap-2">
                         <span className="text-primary">▹</span>
@@ -75,7 +84,7 @@ const About = () => {
                 <div className="relative rounded-lg overflow-hidden border-2 border-primary/50">
                   <img 
                     src={profilePhoto} 
-                    alt="Foto de perfil" 
+                    alt="Foto de perfil da Bruna Lima" 
                     className="aspect-square object-cover w-full"
                   />
                 </div>
