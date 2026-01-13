@@ -31,16 +31,15 @@ const experiences = [
     company: "Fuerza Studio",
     role: "Desenvolvedora Front-end",
     period: "05/2021 - 09/2021",
-    description:
-      "Desenvolvimento front-end para projetos web em WordPress utilizando tecnologias modernas e boas práticas de desenvolvimento.",
-    stack: ["WordPress", "PHP", "JavaScript", "HTML", "CSS", "SCSS", "jQuery"],
+    description: "Sustentação no site de Cadastra, otimização no site de Smiles, desenvolvimento front-end nos sites Nordic Cosmetics, Matrioska e Gerdau.",
+    stack: ["WordPress", "PHP", "JavaScript", "HTML", "CSS", "SCSS", "jQuery", "Liferay"],
   },
   {
     company: "Enube.me",
     role: "Desenvolvedora Front-end",
     period: "12/2020 - 04/2021",
     description:
-      "Atuação no desenvolvimento de um projeto web com foco em experiência do usuário e performance para um cliente da companhia.",
+      "Atuação no desenvolvimento de um projeto web com foco em experiência do usuário e performance para um cliente da companhia com foco em compra de espaço em nuvem.",
     stack: ["JavaScript", "HTML", "CSS", "Vue.js", "Git"],
   },
   {
@@ -48,7 +47,7 @@ const experiences = [
     role: "Desenvolvedora Web",
     period: "08/2016 - 11/2020",
     description:
-      "Desenvolvimento, manutenção e suporte técnico para clientes como Unilever, Faculdades Anclivepa, Westcon, entre outros. Minhas atribuições foram desde desenvolvimento de sites, landing pages, como manutenção em sistemas, e inclusão de conteúdos. Também desenvolvi um sistema de controle de holerites.",
+      "Desenvolvimento, manutenção e suporte técnico para clientes como Unilever, Faculdades Anclivepa, Westcon, entre outros. Minhas atribuições foram desde desenvolvimento de sites, landing pages, como manutenção em sistemas, e inclusão de conteúdos. Também desenvolvi sistemas como controle de holerites reservas de bolsas universitárias.",
     stack: ["PHP", "MySQL", "JavaScript", "HTML", "CSS", "WordPress", "jQuery", "Bootstrap"],
   },
   {
@@ -76,7 +75,7 @@ const Experience = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-2">
-              <span className="font-mono text-primary text-lg">03.</span>{" "}
+              <span className="font-mono text-primary text-lg">04.</span>{" "}
               Experiência Profissional
             </h2>
             <div className="w-24 h-1 bg-primary rounded mx-auto mb-4" />
@@ -138,7 +137,7 @@ const Experience = () => {
                     <Accordion type="single" collapsible className="w-full">
                       <AccordionItem value="description" className="border-none">
                         <AccordionTrigger className="py-2 text-sm text-muted-foreground hover:text-primary hover:no-underline">
-                          Ver descrição
+                          Minhas atribuições
                         </AccordionTrigger>
                         <AccordionContent className="text-sm text-muted-foreground">
                           {exp.description}

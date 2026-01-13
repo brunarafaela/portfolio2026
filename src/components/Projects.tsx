@@ -65,14 +65,6 @@ const projects = [
     live: "https://www.mantecorpsaude.com.br/",
     image: mantecorpSaude,
   },
-  {
-    title: "Coristina",
-    description:
-      "Desenvolvimento de landing page sobre tratamentos complementares com Coristina. Otimizado para SEO e performance.",
-    tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Bootstrap", "SCSS", "Docker", "Git"],
-    live: null,
-    image: coristina,
-  },
 ];
 
 const Projects = () => {
@@ -121,12 +113,12 @@ const Projects = () => {
                         <img
                           src={project.image}
                           alt={project.title}
-                          className="w-full aspect-video object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                          className="w-full aspect-square object-cover object-top group-hover:scale-105 transition-transform duration-500"
                         />
                       </div>
 
                       {/* Project Info */}
-                      <div className="p-5 flex flex-col flex-1">
+                      <div className="p-5 flex flex-col gap-3">
                         <div className="flex items-center justify-between mb-3">
                           <h3 className="text-lg font-bold text-primary">{project.title}</h3>
                           {project.live && (
@@ -141,20 +133,13 @@ const Projects = () => {
                           )}
                         </div>
 
-                        {/* Description accordion */}
-                        <Accordion type="single" collapsible className="w-full mb-3">
-                          <AccordionItem value="description" className="border-none">
-                            <AccordionTrigger className="py-2 text-sm text-muted-foreground hover:text-primary hover:no-underline">
-                              Ver descrição
-                            </AccordionTrigger>
-                            <AccordionContent className="text-sm text-muted-foreground">
-                              {project.description}
-                            </AccordionContent>
-                          </AccordionItem>
-                        </Accordion>
+                        {/* Description */}
+                        <p className="text-sm text-muted-foreground mb-3">
+                          {project.description}
+                        </p>
 
                         {/* All tech badges */}
-                        <div className="flex flex-wrap gap-1.5 mt-auto">
+                        <div className="flex flex-wrap gap-1.5 mt-auto mb-3">
                           {project.tech.map((t) => (
                             <Badge
                               key={t}
@@ -165,6 +150,7 @@ const Projects = () => {
                             </Badge>
                           ))}
                         </div>
+
                       </div>
                     </div>
                   </CarouselItem>

@@ -38,9 +38,15 @@ const About = () => {
               
               <p>
                 Olá! Sou <span className="text-foreground">Bruna Lima</span>, 
-                desenvolvedora apaixonada por tecnologia. Iniciei meus estudos em{" "}
-                <span className="text-foreground">2013</span> e trabalho profissionalmente na área desde{" "}
+                desenvolvedora paulistana nascida em 1992. 
+                Minha paixão por programação começou na adolescência quando descobri o mundo dos <span className="text-foreground">blogs</span> e, movida por curiosidade, comecei a criar minhas próprias páginas web.
+                </p>
+                <p>Posteriormente, o que era hobby virou profissão. Iniciei meus estudos em{" "}
+                <span className="text-foreground">2013</span> e tenho trabalhado profissionalmente na área desde{" "}
                 <span className="text-foreground">2016</span>.
+                Sou pós-graduada em Engenharia de Software com Metodologias Ágeis, 
+                e estou sempre buscando aprimorar minhas habilidades e entregar produtos digitais de qualidade 
+                que fazem diferença na experiência dos usuários.
               </p>
               <p>
                 Minha especialidade é o desenvolvimento de aplicações web utilizando a stack{" "}
@@ -50,18 +56,14 @@ const About = () => {
                 <span className="text-foreground">UI/UX Design</span>, <span className="text-foreground">SEO</span>, {" "}<span className="text-foreground">Performance</span> e{" "}
                 <span className="text-foreground">Conversão</span>.
               </p>
-              <p>
-                Sou pós-graduada em Engenharia de Software com Metodologias Ágeis, 
-                e estou sempre buscando aprimorar minhas habilidades e entregar produtos digitais de qualidade 
-                que fazem diferença na experiência dos usuários.
-              </p>
+              
 
               <div className="pt-4">
                 <p className="text-foreground font-medium mb-3">
-                  Tecnologias que tenho trabalhado:
+                  O que eu faço:
                 </p>
                 <ul className="grid grid-cols-2 gap-2 font-mono text-sm">
-                  {["HTML/CSS/JavaScript", "PHP/MySQL", "API REST", "WordPress/WooCommerce", "Docker", "Bling/Tray"].map(
+                  {["Desenvolvimento full stack", "Suporte & manutenção", "Otimização de desempenho", "Integração de APIs", "Discovery & prototipação", "Implementação pixel perfect"].map(
                     (tech) => (
                       <li key={tech} className="flex items-center gap-2">
                         <span className="text-primary">▹</span>
@@ -79,7 +81,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="md:col-span-2 relative group"
             >
-              <div className="relative">
+              <div className="relative mb-5">
                 <div className="absolute inset-0 rounded-lg bg-primary/20 translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300" />
                 <div className="relative rounded-lg overflow-hidden border-2 border-primary/50">
                   <img 
@@ -89,6 +91,7 @@ const About = () => {
                   />
                 </div>
               </div>
+              <span className="text-muted-foreground font-mono text-xs mt-4">Fora do mundo tech, você me encontra explorando museus, fazendo crochê, aproveitando o sol ou curtindo um bom show de rock. </span>
             </motion.div>
           </div>
         </div>

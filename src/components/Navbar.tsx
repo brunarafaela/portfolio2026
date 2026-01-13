@@ -11,7 +11,6 @@ const navLinks = [
   { name: "Sobre", href: "about" },
   { name: "Formação", href: "education" },
   { name: "Experiência", href: "experience" },
-  { name: "Skills", href: "skills" },
   { name: "Projetos", href: "projects" },
   { name: "Contato", href: "contact" },
 ];
@@ -72,8 +71,7 @@ const Navbar = () => {
               className="flex items-center gap-1 font-medium text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
               title="Ver Currículo"
             >
-              <FileText className="w-4 h-4" />
-              CV
+              Curriculo
             </a>
           </li>
         </ul>
@@ -82,7 +80,7 @@ const Navbar = () => {
           onClick={() => scrollToSection("contact")}
           className="hidden md:inline-flex px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
         >
-          Fale Comigo
+          Me contrate!
         </button>
 
         {/* Mobile Navigation */}
@@ -118,7 +116,6 @@ const Navbar = () => {
                 transition={{ delay: navLinks.length * 0.1, duration: 0.3 }}
                 className="flex items-center gap-2 text-lg font-medium text-muted-foreground hover:text-primary transition-colors duration-300"
               >
-                <FileText className="w-5 h-5" />
                 Currículo
               </motion.a>
               <motion.button

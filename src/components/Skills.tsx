@@ -51,7 +51,7 @@ const Skills = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-2">
-              <span className="font-mono text-primary text-lg">02.</span>{" "}
+              <span className="font-mono text-primary text-lg">03.</span>{" "}
               Habilidades
             </h2>
             <div className="w-24 h-1 bg-primary rounded mx-auto mb-4" />
