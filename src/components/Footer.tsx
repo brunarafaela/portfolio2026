@@ -1,4 +1,6 @@
-import { Github, Linkedin, Twitch, Instagram, Mail, } from "lucide-react";
+import { Github, Linkedin, Twitch, Instagram, Mail, FileText } from "lucide-react";
+
+const CV_URL = "https://docs.google.com/document/d/1AoeJ5DXp_bBN9dKiyRcPwdpzZv3zuwxIE1uekEBBXfI/edit?usp=sharing";
 
 const Footer = () => {
   return (
@@ -11,6 +13,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
+              title="GitHub"
             >
               <Github className="w-5 h-5" />
             </a>
@@ -19,6 +22,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
+              title="LinkedIn"
             >
               <Linkedin className="w-5 h-5" />
             </a>
@@ -27,6 +31,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
+              title="Twitch"
             >
               <Twitch className="w-5 h-5" />
             </a>
@@ -35,6 +40,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
+              title="Instagram"
             >
               <Instagram className="w-5 h-5" />
             </a>
@@ -43,8 +49,18 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
+              title="Email"
             >
               <Mail className="w-5 h-5" />
+            </a>
+            <a
+              href={CV_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              title="Currículo"
+            >
+              <FileText className="w-5 h-5" />
             </a>
           </div>
           <p className="font-mono text-sm text-muted-foreground">

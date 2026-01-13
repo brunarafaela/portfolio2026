@@ -2,6 +2,13 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Building2, Calendar } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const experiences = [
   {
@@ -10,13 +17,15 @@ const experiences = [
     period: "06/2023 - 11/2024",
     description:
       "Trabalhei como analista desenvolvedora em plataformas digitais de Martech. Alocada em squads de marcas da companhia bem como atuação em plataformas internas como CMS entre outros. Marcas: Neoquimica, Mantecorp Skincare, Zero-cal, Cepacol, Nebacetin, Coristina, Tamarine, Blumel, Hypera Pharma, Mantecorp Saúde.",
+    stack: ["PHP", "MySQL", "JavaScript", "HTML", "CSS", "SCSS", "Bootstrap", "Docker", "Azure DevOps", "Git"],
   },
   {
     company: "Colmeia Performance Digital",
     role: "Desenvolvedora Web",
     period: "10/2021 - 05/2023",
     description:
-      "Trabalhei no desenvolvimento de sites, blogs e landing pages em WordPress com foco em performance para captação de leads e conversão. Temas desenvolvidos por mim do zero, de acordo com especificação de cada cliente, utilizando ACF, post types e integraçãpo com plugins.",
+      "Trabalhei no desenvolvimento de sites, blogs e landing pages em WordPress com foco em performance para captação de leads e conversão. Temas desenvolvidos por mim do zero, de acordo com especificação de cada cliente, utilizando ACF, post types e integração com plugins.",
+    stack: ["WordPress", "PHP", "MySQL", "JavaScript", "HTML", "CSS", "SCSS", "ACF", "SEO"],
   },
   {
     company: "Fuerza Studio",
@@ -24,6 +33,7 @@ const experiences = [
     period: "05/2021 - 09/2021",
     description:
       "Desenvolvimento front-end para projetos web em WordPress utilizando tecnologias modernas e boas práticas de desenvolvimento.",
+    stack: ["WordPress", "PHP", "JavaScript", "HTML", "CSS", "SCSS", "jQuery"],
   },
   {
     company: "Enube.me",
@@ -31,6 +41,7 @@ const experiences = [
     period: "12/2020 - 04/2021",
     description:
       "Atuação no desenvolvimento de um projeto web com foco em experiência do usuário e performance para um cliente da companhia.",
+    stack: ["JavaScript", "HTML", "CSS", "Vue.js", "Git"],
   },
   {
     company: "Autônoma",
@@ -38,6 +49,7 @@ const experiences = [
     period: "08/2016 - 11/2020",
     description:
       "Desenvolvimento, manutenção e suporte técnico para clientes como Unilever, Faculdades Anclivepa, Westcon, entre outros. Minhas atribuições foram desde desenvolvimento de sites, landing pages, como manutenção em sistemas, e inclusão de conteúdos. Também desenvolvi um sistema de controle de holerites.",
+    stack: ["PHP", "MySQL", "JavaScript", "HTML", "CSS", "WordPress", "jQuery", "Bootstrap"],
   },
   {
     company: "Seconci-SP",
@@ -45,6 +57,7 @@ const experiences = [
     period: "08/2015 - 07/2016",
     description:
       "Início da carreira profissional atuando em rotinas administrativas nos setores de Informática e Recursos Humanos",
+    stack: ["Suporte Técnico", "Administração"],
   },
 ];
 
@@ -107,9 +120,31 @@ const Experience = () => {
                       <Calendar className="w-3 h-3" />
                       <span className="font-mono">{exp.period}</span>
                     </div>
-                    <p className="text-sm text-muted-foreground">
-                      {exp.description}
-                    </p>
+
+                    {/* Stack badges */}
+                    <div className="flex flex-wrap gap-1.5 mb-3">
+                      {exp.stack.map((tech) => (
+                        <Badge
+                          key={tech}
+                          variant="secondary"
+                          className="text-xs font-mono bg-muted/50 hover:bg-primary/20 transition-colors"
+                        >
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+
+                    {/* Description accordion */}
+                    <Accordion type="single" collapsible className="w-full">
+                      <AccordionItem value="description" className="border-none">
+                        <AccordionTrigger className="py-2 text-sm text-muted-foreground hover:text-primary hover:no-underline">
+                          Ver descrição
+                        </AccordionTrigger>
+                        <AccordionContent className="text-sm text-muted-foreground">
+                          {exp.description}
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
                   </div>
                 </div>
 
