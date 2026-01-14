@@ -156,6 +156,10 @@ const Projects = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
+              <div className="flex justify-center gap-4 mt-6 md:hidden">
+                <CarouselPrevious className="static translate-y-0" />
+                <CarouselNext className="static translate-y-0" />
+              </div>
               <CarouselPrevious className="hidden md:flex -left-12" />
               <CarouselNext className="hidden md:flex -right-12" />
             </Carousel>
