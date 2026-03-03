@@ -84,71 +84,53 @@ const Experience = () => {
             </p>
           </motion.div>
 
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-border md:-translate-x-1/2" />
-
+          <div className="space-y-6">
             {experiences.map((exp, index) => (
               <motion.div
                 key={exp.company + exp.period}
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.1 * index }}
-                className={`relative flex flex-col md:flex-row gap-4 mb-8 ${
-                  index % 2 === 0 ? "md:flex-row-reverse" : ""
-                }`}
+                transition={{ duration: 0.4, delay: 0.08 * index }}
+                className="group"
               >
-                {/* Timeline dot */}
-                <div className="absolute left-0 md:left-1/2 w-3 h-3 bg-primary rounded-full md:-translate-x-1/2 -translate-x-1 mt-6 z-10" />
-
-                {/* Content card */}
-                <div
-                  className={`ml-6 md:ml-0 md:w-1/2 ${
-                    index % 2 === 0 ? "md:pr-12" : "md:pl-12"
-                  }`}
-                >
-                  <div className="p-5 rounded-lg bg-secondary/50 border border-border hover:border-primary/50 transition-colors duration-300">
-                    <div className="flex items-center gap-2 text-primary mb-2">
-                      <Building2 className="w-4 h-4" />
-                      <span className="font-semibold">{exp.company}</span>
+                <div className="py-5 px-1 border-b border-border/60 hover:border-primary/40 transition-colors duration-300">
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1 mb-3">
+                    <div>
+                      <div className="flex items-center gap-2 text-primary mb-1">
+                        <Building2 className="w-4 h-4" />
+                        <span className="font-semibold">{exp.company}</span>
+                      </div>
+                      <h3 className="font-medium text-foreground">{exp.role}</h3>
                     </div>
-                    <h3 className="font-medium text-foreground mb-1">
-                      {exp.role}
-                    </h3>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground shrink-0">
                       <Calendar className="w-3 h-3" />
                       <span className="font-mono">{exp.period}</span>
                     </div>
-
-                    {/* Stack badges */}
-                    <div className="flex flex-wrap gap-1.5 mb-3">
-                      {exp.stack.map((tech) => (
-                        <Badge
-                          key={tech}
-                          variant="secondary"
-                          className="text-xs font-mono bg-muted/50 hover:bg-primary/20 transition-colors"
-                        >
-                          {tech}
-                        </Badge>
-                      ))}
-                    </div>
-
-                    {/* Description accordion */}
-                    <Accordion type="single" collapsible className="w-full">
-                      <AccordionItem value="description" className="border-none">
-                        <AccordionTrigger className="py-2 text-sm text-muted-foreground hover:text-primary hover:no-underline">
-                          Minhas atribuições
-                        </AccordionTrigger>
-                        <AccordionContent className="text-sm text-muted-foreground">
-                          {exp.description}
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
                   </div>
-                </div>
 
-                {/* Spacer for alternating layout */}
-                <div className="hidden md:block md:w-1/2" />
+                  <div className="flex flex-wrap gap-1.5 mb-2">
+                    {exp.stack.map((tech) => (
+                      <Badge
+                        key={tech}
+                        variant="secondary"
+                        className="text-xs font-mono bg-muted/50 hover:bg-primary/20 transition-colors"
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+
+                  <Accordion type="single" collapsible className="w-full">
+                    <AccordionItem value="description" className="border-none">
+                      <AccordionTrigger className="py-2 text-sm text-muted-foreground hover:text-primary hover:no-underline">
+                        Minhas atribuições
+                      </AccordionTrigger>
+                      <AccordionContent className="text-sm text-muted-foreground">
+                        {exp.description}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                </div>
               </motion.div>
             ))}
           </div>
