@@ -84,52 +84,58 @@ const Experience = () => {
             </p>
           </motion.div>
 
-          <div className="space-y-6">
+          <div className="space-y-4">
             {experiences.map((exp, index) => (
               <motion.div
                 key={exp.company + exp.period}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                initial={{ opacity: 0, x: -30 }}
+                animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.4, delay: 0.08 * index }}
-                className="group"
+                className="group relative"
               >
-                <div className="py-5 px-1 border-b border-border/60 hover:border-primary/40 transition-colors duration-300">
-                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1 mb-3">
-                    <div>
-                      <div className="flex items-center gap-2 text-primary mb-1">
-                        <Building2 className="w-4 h-4" />
-                        <span className="font-semibold">{exp.company}</span>
+                <div className="relative rounded-xl bg-secondary/30 border border-border/40 p-5 md:p-6 hover:border-primary/50 hover:bg-secondary/50 transition-all duration-300 overflow-hidden">
+                  {/* Accent left bar */}
+                  <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary/30 group-hover:bg-primary transition-colors duration-300 rounded-l-xl" />
+
+                  <div className="pl-4">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
+                      <div className="flex items-center gap-2">
+                        <Building2 className="w-4 h-4 text-primary" />
+                        <span className="font-semibold text-primary text-sm">{exp.company}</span>
                       </div>
-                      <h3 className="font-medium text-foreground">{exp.role}</h3>
+                      <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                        <Calendar className="w-3 h-3" />
+                        <span className="font-mono">{exp.period}</span>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground shrink-0">
-                      <Calendar className="w-3 h-3" />
-                      <span className="font-mono">{exp.period}</span>
+
+                    <h3 className="text-base md:text-lg font-medium text-foreground mb-3">
+                      {exp.role}
+                    </h3>
+
+                    <div className="flex flex-wrap gap-1.5 mb-2">
+                      {exp.stack.map((tech) => (
+                        <Badge
+                          key={tech}
+                          variant="secondary"
+                          className="text-[11px] font-mono bg-muted/60 border border-border/50 hover:bg-primary/20 hover:border-primary/30 transition-colors"
+                        >
+                          {tech}
+                        </Badge>
+                      ))}
                     </div>
-                  </div>
 
-                  <div className="flex flex-wrap gap-1.5 mb-2">
-                    {exp.stack.map((tech) => (
-                      <Badge
-                        key={tech}
-                        variant="secondary"
-                        className="text-xs font-mono bg-muted/50 hover:bg-primary/20 transition-colors"
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
+                    <Accordion type="single" collapsible className="w-full">
+                      <AccordionItem value="description" className="border-none">
+                        <AccordionTrigger className="py-2 text-sm text-muted-foreground hover:text-primary hover:no-underline">
+                          Minhas atribuições
+                        </AccordionTrigger>
+                        <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
+                          {exp.description}
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
                   </div>
-
-                  <Accordion type="single" collapsible className="w-full">
-                    <AccordionItem value="description" className="border-none">
-                      <AccordionTrigger className="py-2 text-sm text-muted-foreground hover:text-primary hover:no-underline">
-                        Minhas atribuições
-                      </AccordionTrigger>
-                      <AccordionContent className="text-sm text-muted-foreground">
-                        {exp.description}
-                      </AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
                 </div>
               </motion.div>
             ))}
